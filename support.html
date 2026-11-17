@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>고객지원 — Feltone</title>
+<meta name="description" content="Feltone 자주 묻는 질문과 문의 방법.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">Feltone</a>
+  <div class="header-right">
+    <nav class="main-nav" aria-label="주 메뉴">
+      <a href="index.html">소개</a>
+      <a href="product.html">제품</a>
+      <a href="support.html" aria-current="page">고객지원</a>
+    </nav>
+    <div class="segmented" role="group" aria-label="언어 선택">
+      <button type="button" aria-pressed="true">KO</button>
+      <button type="button" aria-pressed="false" disabled title="English version coming soon">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="container support-layout">
+  <section class="support-layout__main">
+    <div class="stack" style="gap: 8px">
+      <h1 class="title" style="font-size: clamp(32px, 4vw, 44px)">자주 묻는 질문</h1>
+      <p class="muted">찾는 답이 없다면 이메일로 편하게 물어봐 주세요.</p>
+    </div>
+    <!-- 질문을 추가하려면 <details> ... </details> 묶음을 하나 복사해서 붙여 넣으세요 -->
+    <div class="faq">
+      <details open>
+        <summary>언제 출시되나요?</summary>
+        <p>[출시 예정 시기]를 목표로 만들고 있어요. 정확한 날짜는 출시 소식 메일과 이 사이트에서 가장 먼저 알려드릴게요.</p>
+      </details>
+      <details>
+        <summary>가격은 얼마인가요?</summary>
+        <p>가격은 출시 때 공개할 예정이에요. 출시 소식을 신청하시면 첫 구매 혜택도 함께 안내해 드려요.</p>
+      </details>
+      <details>
+        <summary>어떤 DAW에서 쓸 수 있나요?</summary>
+        <p>VST3 또는 AU를 지원하는 DAW에서 쓸 수 있도록 만들고 있어요. 직접 확인한 DAW 목록은 출시 때 안내할게요.</p>
+      </details>
+      <details>
+        <summary>한 번 사면 컴퓨터 몇 대에서 쓸 수 있나요?</summary>
+        <p>시리얼 하나로 최대 3대의 기기에서 쓸 수 있게 준비하고 있어요. 컴퓨터를 바꾸면 예전 기기를 해제하고 새 기기에 등록하면 돼요.</p>
+      </details>
+      <details>
+        <summary>변환한 목소리로 만든 곡을 발매해도 되나요?</summary>
+        <p>[상업적 이용 범위 — 출시 전에 이용약관으로 정리해서 안내]</p>
+      </details>
+      <details>
+        <summary>출시 소식 메일은 어떻게 그만 받나요?</summary>
+        <p>받으신 메일 아래쪽의 수신 거부 링크를 누르면 바로 그만 받을 수 있어요. 이메일로 요청하셔도 돼요.</p>
+      </details>
+    </div>
+  </section>
+
+  <aside class="contact-card">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8A5A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+    <div class="stack" style="gap: 6px">
+      <h2>이메일로 문의하기</h2>
+      <p class="muted" style="font-size: 15px">혼자 운영하는 공방이라 답장까지 [답변 기간] 정도 걸릴 수 있어요. 조금만 기다려 주세요.</p>
+    </div>
+    <!-- 이메일 주소가 정해지면 mailto: 뒤와 버튼 글자를 함께 바꾸세요. 예: mailto:hello@feltone.com -->
+    <a href="mailto:" class="btn btn--primary btn--lg">[이메일 주소]</a>
+    <p class="muted" style="font-size: 14px">협업이나 제안도 같은 주소로 보내주세요.</p>
+  </aside>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__info">
+      <span class="site-footer__logo">Feltone</span>
+      <span>한국과 아시아의 음악가를 위한 작은 소리 공방</span>
+      <span>문의 [이메일 주소]</span>
+      <span>© 2026 Feltone</span>
+    </div>
+    <div class="site-footer__links">
+      <nav aria-label="하단 메뉴">
+        <a href="product.html">제품</a>
+        <a href="support.html">고객지원</a>
+        <a href="privacy.html" class="strong">개인정보처리방침</a>
+      </nav>
+      <nav aria-label="SNS">
+        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>YouTube</a>
+        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>Instagram</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

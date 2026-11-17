@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feltone — 작은 소리 공방</title>
+<meta name="description" content="Feltone은 한국과 아시아의 음악가를 위해 오디오 플러그인과 가상악기를 만드는 작은 공방입니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 헤더 (모든 페이지에 똑같이 들어 있어요) ===== -->
+<header class="site-header">
+  <a href="index.html" class="logo">Feltone</a>
+  <div class="header-right">
+    <nav class="main-nav" aria-label="주 메뉴">
+      <a href="index.html" aria-current="page">소개</a>
+      <a href="product.html">제품</a>
+      <a href="support.html">고객지원</a>
+    </nav>
+    <div class="segmented" role="group" aria-label="언어 선택">
+      <button type="button" aria-pressed="true">KO</button>
+      <button type="button" aria-pressed="false" disabled title="English version coming soon">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ===== 첫 화면 ===== -->
+  <section class="container hero">
+    <div class="hero__text">
+      <p class="eyebrow">작은 소리 공방</p>
+      <h1 class="display">마음에 닿는 소리를,<br>손으로 빚어 만듭니다</h1>
+      <p class="lead">Feltone은 한국과 아시아의 음악가를 위해 오디오 플러그인과 가상악기를 만드는 작은 공방입니다. 크고 복잡한 도구보다, 매일 손이 가는 따뜻한 도구를 만들고 싶어요.</p>
+      <div class="btn-row">
+        <a href="#news" class="btn btn--primary">출시 소식 받기</a>
+        <a href="#story" class="btn btn--ghost">공방 이야기</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <!-- 데모 음원이 준비되면 아래 data-src-... 에 파일 경로를 넣으세요. 예: audio/demo-original.mp3 -->
+      <div class="player" data-mode="converted"
+           data-src-original=""
+           data-src-converted=""
+           data-caption-original="원본 가이드 보컬"
+           data-caption-converted="변환된 목소리 · [목소리 모델 이름]">
+        <div class="player__top">
+          <span class="player__label">먼저 들어보세요</span>
+          <div class="segmented segmented--soft" role="group" aria-label="음원 선택">
+            <button type="button" data-mode-btn="original" aria-pressed="false">원본</button>
+            <button type="button" data-mode-btn="converted" aria-pressed="true">변환</button>
+          </div>
+        </div>
+        <div class="wave" aria-hidden="true">
+          <span style="height: 28px"></span><span style="height: 46px"></span><span style="height: 62px"></span><span style="height: 40px"></span>
+          <span style="height: 74px"></span><span style="height: 92px"></span><span style="height: 58px"></span><span style="height: 36px"></span>
+          <span style="height: 66px"></span><span style="height: 88px"></span><span style="height: 104px"></span><span style="height: 70px"></span>
+          <span style="height: 48px"></span><span style="height: 80px"></span><span style="height: 96px"></span><span style="height: 60px"></span>
+          <span style="height: 42px"></span><span style="height: 72px"></span><span style="height: 90px"></span><span style="height: 64px"></span>
+          <span style="height: 38px"></span><span style="height: 56px"></span><span style="height: 84px"></span><span style="height: 100px"></span>
+          <span style="height: 68px"></span><span style="height: 44px"></span><span style="height: 60px"></span><span style="height: 78px"></span>
+          <span style="height: 50px"></span><span style="height: 34px"></span><span style="height: 52px"></span><span style="height: 30px"></span>
+        </div>
+        <div class="player__controls">
+          <button type="button" class="play-btn" aria-label="재생">
+            <svg class="icon-play" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
+            <svg class="icon-pause" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 5v14"/><path d="M15 5v14"/></svg>
+          </button>
+          <div class="player__meta">
+            <span class="player__title">[데모 곡 제목]</span>
+            <span class="player__caption">변환된 목소리</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 우리가 지키는 것 ===== -->
+  <section class="section section--paper">
+    <div class="container stack stack--xl">
+      <div class="stack" style="max-width: 640px">
+        <p class="eyebrow">우리가 지키는 것</p>
+        <h2 class="title">Feltone은 이런 도구를 만듭니다</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg>
+          <h3>따뜻한 소리</h3>
+          <p>차갑고 기계적인 소리보다, 사람의 손길이 느껴지는 소리를 먼저 생각합니다.</p>
+        </article>
+        <article class="card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8"/></svg>
+          <h3>음악가의 언어로</h3>
+          <p>한국어와 아시아 음악에 맞춘 도구를, 어려운 용어 없이 쓸 수 있게 만듭니다.</p>
+        </article>
+        <article class="card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg>
+          <h3>오래 함께하는 도구</h3>
+          <p>한 번 사면 꾸준히 손보고 고쳐 가며, 오래 곁에 둘 수 있는 도구를 만듭니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 첫 번째 도구 ===== -->
+  <section class="section container stack stack--lg">
+    <div class="stack">
+      <p class="eyebrow">첫 번째 도구</p>
+      <h2 class="title">한국어로 노래하는 목소리를 위한 플러그인</h2>
+    </div>
+    <div class="product-card">
+      <!-- 플러그인 화면 이미지가 생기면 이 div 를 <img src="images/파일이름.png" alt="설명"> 으로 바꾸세요 -->
+      <div class="placeholder">[플러그인 화면 이미지]</div>
+      <div class="product-card__text">
+        <span class="badge">출시 예정 · [출시 시기]</span>
+        <h3 class="product-card__name">[플러그인 이름]</h3>
+        <p class="product-card__desc">한국어 발음에 맞춰 학습한 가창 음성 변환 플러그인. 가이드 보컬을 원하는 목소리로 바꿔, DAW 안에서 바로 들어볼 수 있어요.</p>
+        <a href="product.html" class="link-arrow">자세히 보기
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 공방 이야기 ===== -->
+  <section id="story" class="section section--sand">
+    <div class="container story">
+      <p class="eyebrow">공방 이야기</p>
+      <h2 class="story__quote">“노래하는 사람의 언어를 잘 아는 도구가 있었으면 했어요.”</h2>
+      <p>많은 음악 도구가 영어 노래를 기준으로 만들어져, 한국어 노래의 받침과 숨결은 쉽게 뭉개지곤 합니다. Feltone은 그 빈자리를 채우는 작은 도구부터 하나씩 만들어 가려고 해요.</p>
+      <p>[Feltone이라는 이름에 담은 뜻 — 1~2문장]</p>
+    </div>
+  </section>
+
+  <!-- ===== 출시 소식 받기 ===== -->
+  <section id="news" class="section container">
+    <div class="newsletter">
+      <div class="newsletter__text">
+        <h2 class="newsletter__title">출시 소식을 가장 먼저 받아보세요</h2>
+        <p>새 플러그인과 업데이트 소식만 가끔 보내드려요. 언제든 메일 아래 링크로 그만 받을 수 있어요.</p>
+      </div>
+      <!-- 뉴스레터 서비스를 정하면 data-endpoint="" 안에 서비스가 준 주소를 넣으세요 -->
+      <form class="newsletter__form js-newsletter" data-endpoint="" novalidate>
+        <div class="newsletter__row">
+          <label class="newsletter__field">이메일 주소
+            <input type="email" name="email" required autocomplete="email" placeholder="name@example.com">
+          </label>
+          <button type="submit" class="newsletter__submit">소식 받기</button>
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" value="yes" required>
+          <span>(필수) 출시 소식 발송을 위한 이메일 수집·이용에 동의합니다. <a href="privacy.html">개인정보처리방침</a></span>
+        </label>
+        <p class="form-message" role="alert" hidden></p>
+      </form>
+      <div class="newsletter__done" role="status" hidden>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E8C9A4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>
+        <span>신청됐어요. 출시되면 가장 먼저 알려드릴게요.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== 푸터 (모든 페이지에 똑같이 들어 있어요) ===== -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__info">
+      <span class="site-footer__logo">Feltone</span>
+      <span>한국과 아시아의 음악가를 위한 작은 소리 공방</span>
+      <span>문의 [이메일 주소]</span>
+      <span>© 2026 Feltone</span>
+    </div>
+    <div class="site-footer__links">
+      <nav aria-label="하단 메뉴">
+        <a href="product.html">제품</a>
+        <a href="support.html">고객지원</a>
+        <a href="privacy.html" class="strong">개인정보처리방침</a>
+      </nav>
+      <!-- SNS 주소가 생기면 href="#" 을 실제 주소로 바꾸세요. 아직 계정이 없으면 이 nav 를 통째로 지워도 돼요. -->
+      <nav aria-label="SNS">
+        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>YouTube</a>
+        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>Instagram</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
